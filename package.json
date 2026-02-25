@@ -1,13 +1,13 @@
 {
-  "name": "the-gut-tracker",
+  "name": "cook-county-birds",
   "version": "1.0.0",
   "private": true,
-  "description": "valerieychu.github.io/the-gut-tracker",
+  "description": "valerieychu.github.io/cook-county-birds",
   "author": "valerieychu",
   "keywords": [
     "gatsby"
   ],
-  "homepage": "https://valerieychu.github.io/the-gut-tracker",
+  "homepage": "https://valerieychu.github.io/cook-county-birds",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
