@@ -1,14 +1,20 @@
 <h1 align="center">
-  The Gut Tracker
+  Cook County Birds
 </h1>
 
-## ✨ Welcome to The Gut Tracker! ✨
+## Welcome to Cook County Birds! 🪿🦅🦆🪶
 
-This is a custom website I built myself!
+The birds of Cook County — a place millions of birds pass through per year, and a place others make their home. From the lakes of Northwestern University to the shores of Montrose Point, there is data for all kinds of birds ranging from Canada geese and bald eagles to snowy owls and mergansers. 
 
-I wanted a gut tracker, so I designed, wireframed, coded, and deployed this site from scratch. I selected all typefaces, did all the styling, created all custom components in React and Adobe Illustrator, optimized for both mobile and desktop, and got everything running!
+The data processing, data analysis, data visualization, reporting, photography, code, and FOIA-ing for this story was done for my JOUR 377: Data Journalism final project. 
 
-You can click [here](https://valerieychu.github.io/the-gut-tracker) to check it out! 
+I designed, wireframed, coded, and deployed this site from scratch. I selected all typefaces, did all the styling, created all images and custom components with React and Adobe Lightroom Classic, optimized for both mobile and desktop, and got everything running.
+
+Data source: eBird API 2.0
+
+This repo also contains my data wrangling, data visualizations, and process documentation. 
+
+You can click [here](https://valerieychu.github.io/cook-county-birds) to check out my story! 
 
 If you have any questions or would love to chat please reach out through [email](mailto:valeriechu2026@u.northwestern.edu) or any of the platforms below!
 

@@ -5,12 +5,12 @@ import { navigate } from 'gatsby';
 const Header = () => {
   return (
     <header className='header'>
-      {/* <div className='header-name-position'>
-        <button className='header-name' onClick={() => navigate('/')}>
+      <div className='header-name-position'>
+        <button className='header-name' onClick={() => window.location.href = 'https://valerieychu.github.io/'}>
           Valerie Chu
         </button>
       </div>
-      <div className='header-buttons'>
+      {/* <div className='header-buttons'>
         <div className='dropdown'>
           <button className='work' onClick={() => navigate('/work')}>
             Work
@@ -41,7 +41,7 @@ const Header = () => {
         <button className='me' onClick={() => navigate('/about')}>
           Me
         </button>
-      </div> */}
+      </div>  */}
     </header>
   );
 };

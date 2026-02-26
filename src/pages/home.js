@@ -16,30 +16,28 @@ const Home = () => {
     <>
       <div className="intro">
         <div className="centered-text">
-          <h1 className="h0">
-            The
-            <br />
-            Gut
-            <br />
-            Tracker
-          </h1>
+          <h1 className="h1">Cook County Birds</h1>
           {/* <h1 className="h0">Gut</h1>
           <h1 className="h0">Tracker</h1> */}
-          <h2 className="h05">
-            A very slay tracker for digestive health, yay!
-          </h2>
+          <h2 className="h2">Cook County Birds!</h2>
+          <h3 className="h3">Header goes here</h3>
+          <p className="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
           <div className="blob">
             <img src={blobpink} alt="A pink blob." />
             <img src={blobblue} alt="A blue blob." />
             <img src={blobgreen} alt="A green blob." />
           </div>
+          {/* <br></br> */}
+          {/* <img src={arrowdown} alt="A down arrow." /> */}
           <br></br>
-          <img src={arrowdown} alt="A down arrow." />
-          <br></br>
-          <h3 className="h3">
-            Note: This project was started in January 2026. It's very much still
-            currently under digestion.
-          </h3>
         </div>
       </div>
     </>
