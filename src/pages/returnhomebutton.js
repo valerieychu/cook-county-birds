@@ -24,7 +24,7 @@ const ReturnHomeButton = () => {
           className='return-home-button'
           style={{ marginRight: '1rem' }}
           aria-label='Return to home page'
-          onClick={() => navigate('/')}>
+          onClick={() => window.location.href = 'https://valerieychu.github.io/'}>
           <FaHome className='return-home-icon' />
         </button>
       )}

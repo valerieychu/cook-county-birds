@@ -9,6 +9,7 @@ const Header = () => {
         <button className='header-name' onClick={() => window.location.href = 'https://valerieychu.github.io/'}>
           Valerie Chu
         </button>
+        <p className="data-dive">Data Dive</p>
       </div>
       {/* <div className='header-buttons'>
         <div className='dropdown'>

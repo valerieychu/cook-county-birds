@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/global.less';
 import '../styles/projectcard.less';
-import valeriegoddard from '../images/valeriegoddard.jpeg';
 const ProjectCard = ({
   image,
   alt,

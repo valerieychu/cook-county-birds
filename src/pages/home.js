@@ -5,11 +5,10 @@ import image from "../images/valeriechu.png";
 import divider from "../images/divider.svg";
 import Header from "./header";
 import Footer from "./footer";
-import aetchome from "../images/aetchome.png";
 import blobblue from "../images/blobblue.png";
 import blobgreen from "../images/blobgreen.png";
 import blobpink from "../images/blobpink.png";
-import arrowdown from "../images/arrowdown.png";
+import Lakefill02227 from "../images/Lakefill-02227.jpg";
 
 const Home = () => {
   return (
@@ -30,10 +29,17 @@ const Home = () => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <div className="blob">
-            <img src={blobpink} alt="A pink blob." />
+          <div className="image">
+            <figure>
+              <img
+                src={Lakefill02227}
+                alt="A common merganser swims on Northwestern's Lakefill."
+              />
+              <figcaption className="image-caption">A common merganser swims on Northwestern's Lakefill at sundown on Feb. 26, 2026.</figcaption>
+            </figure>
+            {/* <img src={blobpink} alt="A pink blob." />
             <img src={blobblue} alt="A blue blob." />
-            <img src={blobgreen} alt="A green blob." />
+            <img src={blobgreen} alt="A green blob." /> */}
           </div>
           {/* <br></br> */}
           {/* <img src={arrowdown} alt="A down arrow." /> */}

@@ -15,9 +15,24 @@
 }
 
 .image {
-  height: 15rem;
-  width: 15rem;
-  margin: 1rem;
+  width: 100%;
+  height: auto;
+
+  img, iframe, video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 0; // explicitly clear margin
+  }
+}
+
+.image-caption {
+  font-family: 'Open Sans', 'Roboto', Arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  text-align: left;
 }
 
 .imageslideshowwrapper {
