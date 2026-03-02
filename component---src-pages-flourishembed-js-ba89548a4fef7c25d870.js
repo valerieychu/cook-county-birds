@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcook_county_birds=self.webpackChunkcook_county_birds||[]).push([[40],{4334:function(e,s,t){t.r(s);var c=t(6540);s.default=e=>{let{visualizationId:s}=e;return(0,c.useEffect)(()=>{const e=document.createElement("script");e.src="https://public.flourish.studio/resources/embed.js",e.async=!0,document.body.appendChild(e)},[]),c.createElement("div",{className:"flourish-embed flourish-chart","data-src":"visualisation/"+s,style:{width:"100%"}})}}}]);
+//# sourceMappingURL=component---src-pages-flourishembed-js-ba89548a4fef7c25d870.js.map
