@@ -25,9 +25,6 @@ const Home = () => {
           <h2 className="h2">
             Northwestern's bird species illustrate stories of recovery
           </h2>
-          <p className="byline">
-            Valerie Chu
-          </p>
 
           <figure className="image">
             <img
@@ -39,6 +36,9 @@ const Home = () => {
               April 1, 2023. (Photo by Valerie Chu)
             </figcaption>
           </figure>
+
+          <p className="byline">Valerie Chu</p>
+          <p className="date-published">March 1, 2026</p>
 
           <p className="paragraph">
             On a warm February evening, Weinberg fourth-year Alex Boyko stood on
@@ -132,22 +132,37 @@ const Home = () => {
           </p>
 
           <p className="paragraph">
-            A prominent ornithological study published in 2019 found that 2.9
-            billion birds have vanished since 1970. Stotz, whose work focuses on
-            conservation, said birds are not just declining, but declining
-            faster than expected due to both habitat loss from agricultural and
-            housing development, as well as agricultural practices becoming less
-            suitable to birds. Still, Stotz said this broad assertion of
-            declining bird populations is not applicable to all types of birds.
-            And to Bates, looking at the stories of individual bird species like
-            the Canada goose brings him hope that various other species can
-            recover.
+            A prominent ornithological{" "}
+            <a
+              href="https://www.birds.cornell.edu/home/wp-content/uploads/2019/09/DECLINE-OF-NORTH-AMERICAN-AVIFAUNA-SCIENCE-2019.pdf"
+              target="_blank"
+            >
+              study
+            </a>{" "}
+            published in <i>Science</i> in 2019 found that 2.9 billion birds
+            have vanished since 1970. An even more recent{" "}
+            <a
+              href="https://www.science.org/doi/10.1126/science.ads0871"
+              target="_blank"
+            >
+              study
+            </a>{" "}
+            published in <i>Science</i> on Feb. 26, 2026, found that a large
+            part of North American bird populations are not just declining, but
+            declining faster than expected. Stotz, whose work focuses on
+            conservation, highlighted how this accelerated decline could be due
+            to both habitat loss from agricultural intensity and housing
+            development, as well as agricultural practices becoming less
+            suitable to birds. But he also added a caveat — this decline of bird
+            populations is not applicable to all types of birds. And to Bates,
+            looking at the stories of individual bird species like the Canada
+            goose brings him hope that various other species can recover.
           </p>
 
           <p className="paragraph">
             Dr. Eli Suzukovich III, who teaches Northwestern’s Maple Syrup and
-            Climate Change class, said that over the years, he has also kept an
-            eye on winter birds and the change in bird species on campus.
+            Climate Change class, said that over the years, he has kept an eye
+            on winter birds and the change in bird species on campus.
           </p>
 
           <p className="paragraph">
@@ -175,7 +190,7 @@ const Home = () => {
           </p>
 
           <p className="paragraph">
-            Suzukovich said that the decline of these two ducks appearing on the
+            Suzukovich said that the decline of these ducks appearing on the
             Lakefill could be due to a number of factors such as changed flight
             patterns or the weather being too warm for an arctic duck. But he’s
             noticed another pattern in a different species.
@@ -191,7 +206,7 @@ const Home = () => {
               entry
             </a>{" "}
             for: females have “rich, cinnamon heads with a short crest,” while
-            males have “clean white bodies, dark green heads, and a slender,
+            males have “clean white bodies, dark green heads and a slender,
             serrated red bill.”
           </p>
 
@@ -261,11 +276,12 @@ const Home = () => {
           <h3 className="h3">Methodology</h3>
 
           <p className="paragraph">
-            I gathered bird hotspot data and Canada geese numbers through
-            multiple API calls to the eBird API 2.0. I used Python’s request
-            library to extract this data, then worked with either Python, R or
-            Flourish, depending on the specific dataset, to wrangle, analyze and
-            visualize the data. Additional information on each specific data
+            I gathered bird species data, bird hotspot data and Canada geese
+            numbers through the eBird API 2.0. I used Python’s request library
+            to extract the data, then worked with either Python, R or Flourish,
+            depending on the specific dataset, to wrangle, analyze and visualize
+            the data. I also used iNaturalist to find bufflehead numbers.
+            Additional information on my approach toward each specific data
             finding is below.
           </p>
           <p className="paragraph">
@@ -280,18 +296,76 @@ const Home = () => {
           <p className="paragraph">
             1. “There have been 490 unique bird species spotted in Cook County,
             according to eBird data.”
-            <br></br>- Using the eBird API 2.0, I requested the number of bird
-            species seen in Cook County, which only looks at species list
-            (spplist) and doesn’t exclude any records based on dates.
+            <br></br>- U- Using the eBird API 2.0, I requested the number of
+            bird species seen in Cook County, which only looks at species list
+            (spplist) and doesn’t exclude any records based on dates. This gets
+            a complete collection of all birds spotted, dating back to eBird’s
+            beginnings in 2002.
           </p>
           <p className="paragraph">
             2. “Bird watchers have recorded bird sightings in practically all
             corners of the county, with Montrose Point Bird Sanctuary and
-            Northwestern University proving to be particular places of
-            interest.”
+            Northwestern University proving to be particularly fruitful
+            locations.”
             <br></br>- Using the eBird API 2.0, I requested the bird hotspots of
             Cook County, which only looks at hotspots and doesn’t exclude any
-            records based on dates.
+            records based on dates. This gets a complete collection of bird
+            hotspots, dating back to eBird’s beginnings in 2002.
+          </p>
+          <p className="paragraph">
+            3. Data visualization: Bird hotspots of Cook County
+            <br></br>- Using the eBird API 2.0, I requested the bird hotspots of
+            Cook County. Then I used Flourish to plot every place a bird was
+            spotted, playing around with the opacity such that hotspots would
+            have more circles and thus appear darker on the map.
+          </p>
+          <p className="paragraph">
+            4. “Canada goose numbers in Cook County have been holding steady —
+            for the past five years, bird watchers have spotted an average of 29
+            geese a day around the shores of Lake Michigan.”
+            <br></br>- Using the eBird API 2.0, I requested all Canada geese
+            numbers reported for every single day in Cook County from 2020 to
+            now (Feb. 23, 2026). I appended these numbers to a CSV as they were
+            pulled, ensuring that if something happened during the three hours
+            it took to pull all 2,247 observations, I could go back and fix
+            particular dates that were missed or pulled incorrectly. Then I
+            imported this CSV into RStudio and summarized the mean to find the
+            average number of Canada geese spotted per day in Cook County.
+          </p>
+          <p className="paragraph">
+            5. Data visualization: Canada geese numbers remain steady in Cook
+            County
+            <br></br>- Using the same Canada goose dataset as the one I created
+            from the eBird API 2.0, I made this line chart to show the daily
+            Canada goose counts in Cook County, averaged per month. I initially
+            tried to plot every data point, but the line chart quickly got
+            clustered from the 2,247 observations and looked more like a
+            horizontal ink blob than a data visualization. So instead, I
+            averaged the Canada goose counts per month and graphed those. The
+            visual representation of the steady, cyclical trend in the numbers
+            of Canada geese in Cook County showed that their numbers have
+            remained steady from 2020 to now.
+          </p>
+          <p className="paragraph">
+            6. “While bird watching data on iNaturalist tends to be a record of
+            human activity as much as one of birds, an analysis of
+            research-grade sightings of buffleheads shows that the numbers of
+            buffleheads spotted in Cook County have been generally decreasing
+            since 2021.”
+            <br></br>- I filtered iNaturalist for “bufflehead” and “Cook County,
+            IL,” then exported only the research-grade observations. These
+            observations were for all bufflehead sightings in Cook County that
+            iNaturalist had ever collected, which dates back to 2008. I then
+            imported this CSV into RStudio, pulled the year and month each
+            bufflehead was sighted, and did a similar data wrangling process as
+            with the Canada geese numbers, where I averaged the bufflehead
+            counts per month and graphed those. I decided against adding the
+            final graph for bufflehead numbers into the final data story because
+            it would have left the story too visually cluttered, but the line
+            chart and my data wrangling process are in the Quarto file of this
+            GitHub project. The visualization showed that the numbers of
+            buffleheads spotted in Cook County have been generally decreasing
+            since 2021.
           </p>
         </div>
       </div>
