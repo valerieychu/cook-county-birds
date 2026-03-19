@@ -32,8 +32,8 @@ const Home = () => {
               alt="A Canada goose swims in the middle of the lake toward a large glass building in the background. It is looking off to the distance."
             />
             <figcaption className="image-caption">
-              A Canada goose swims on Northwestern University's Lakefill on
-              April 1, 2023. (Photo by Valerie Chu)
+              A Canada goose swims on Northwestern University's lagoon on April
+              1, 2023. (Photo by Valerie Chu)
             </figcaption>
           </figure>
 
@@ -41,9 +41,9 @@ const Home = () => {
           <p className="date-published">March 1, 2026</p>
 
           <p className="paragraph">
-            On a warm February evening, Weinberg fourth-year Alex Boyko stood on
-            a small hill on Northwestern’s Lakefill, a pair of binoculars held
-            to his eyes.
+            On a warm February evening, Weinberg senior Alex Boyko stood on a
+            small hill on Northwestern’s Lakefill, a pair of binoculars held to
+            his eyes.
           </p>
 
           <p className="paragraph">
@@ -70,8 +70,8 @@ const Home = () => {
               alt="A man with a pair of binoculars looks out across the lake."
             />
             <figcaption className="image-caption">
-              Alex Boyle peers through a pair of binoculars toward Nortwestern's
-              Lakefill on Feb. 18, 2026. (Photo by Valerie Chu)
+              Alex Boyko peers through a pair of binoculars toward
+              Northwestern's lagoon on Feb. 18, 2026. (Photo by Valerie Chu)
             </figcaption>
           </figure>
 
@@ -108,7 +108,7 @@ const Home = () => {
           </figure>
 
           <p className="paragraph">
-            Yet, despite their prevalence on Northwestern’s Lakefill today, this
+            Yet, despite their prevalence on Northwestern’s lagoon today, this
             wasn’t always the case.
           </p>
 
@@ -160,7 +160,7 @@ const Home = () => {
           </p>
 
           <p className="paragraph">
-            Dr. Eli Suzukovich III, who teaches Northwestern’s Maple Syrup and
+            Eli Suzukovich III, who teaches Northwestern’s Maple Syrup and
             Climate Change class, said that over the years, he has kept an eye
             on winter birds and the change in bird species on campus.
           </p>
@@ -177,8 +177,8 @@ const Home = () => {
           <p className="paragraph">
             While bird watching data on iNaturalist tends to be a record of
             human activity as much as one of birds, an analysis of
-            research-grade sightings of buffleheads shows that the numbers of
-            buffleheads spotted in Cook County have been generally decreasing
+            research-grade sightings of buffleheads shows that the number of
+            buffleheads spotted in Cook County has been generally decreasing
             since 2021.
           </p>
 
@@ -191,14 +191,14 @@ const Home = () => {
 
           <p className="paragraph">
             Suzukovich said that the decline of these ducks appearing on the
-            Lakefill could be due to a number of factors such as changed flight
+            lagoon could be due to a number of factors, such as changed flight
             patterns or the weather being too warm for an arctic duck. But he’s
             noticed another pattern in a different species.
           </p>
 
           <p className="paragraph">
-            The common merganser is a duck which Cornell Lab of Ornithology’s
-            All About Birds guide has an{" "}
+            The common merganser is a duck for which Cornell Lab of
+            Ornithology’s All About Birds guide has an{" "}
             <a
               href="https://www.allaboutbirds.org/guide/Common_Merganser/overview"
               target="_blank"
@@ -213,30 +213,30 @@ const Home = () => {
           <figure className="image">
             <img
               src={Lakefill02227}
-              alt="A common merganser swims on Northwestern's Lakefill."
+              alt="A common merganser swims on Northwestern's lagoon."
             />
             <figcaption className="image-caption">
-              A young common merganser swims on Northwestern's Lakefill at
-              sundown on Feb. 26, 2026. (Photo by Valerie Chu)
+              A young common merganser swims on Northwestern's lagoon at sundown
+              on Feb. 26, 2026. (Photo by Valerie Chu)
             </figcaption>
           </figure>
 
           <p className="paragraph">
             “I don't know exactly what prompted it, but you see more of these
-            common mergansers than you used to and it does also seem to coincide
-            with warmer and unpredictable winters,” Suzukovich said.
+            common mergansers than you used to, and it does also seem to
+            coincide with warmer and unpredictable winters,” Suzukovich said.
           </p>
 
           <p className="paragraph">
             Suzukovich said that he thinks Canada geese, too, have enjoyed
             Northwestern’s slightly warmer winters. Bates said there are
-            migratory populations of Canada geese across the Canadian Artic,
-            then there are the geese that don’t migrate in the continental
+            migratory populations of Canada geese across the Canadian Arctic,
+            and then there are the geese that don’t migrate in the continental
             United States.
           </p>
 
           <p className="paragraph">
-            That’s what Weinberg third-year Zach Wolk has noticed, too.
+            That’s what Weinberg junior Zach Wolk has noticed, too.
           </p>
 
           <p className="paragraph">
@@ -250,11 +250,11 @@ const Home = () => {
           </p>
 
           <p className="paragraph">
-            In the fall and spring when the geese are around, he visits them
-            once a day, a few times a week at Evanston’s Arrington Lagoon and
-            around Northwestern’s Lakefill. And despite recent construction, he
+            In the fall and spring, when the geese are around, he visits them
+            once a day, a few times a week, at Evanston’s Arrington Lagoon and
+            around Northwestern’s lagoon. And despite recent construction, he
             said that over the past three years, he hasn’t observed any
-            significant difference in the numbers of Canada geese.
+            significant difference in the number of Canada geese.
           </p>
 
           <p className="paragraph">
@@ -296,8 +296,8 @@ const Home = () => {
           <p className="paragraph">
             1. “There have been 490 unique bird species spotted in Cook County,
             according to eBird data.”
-            <br></br>- U- Using the eBird API 2.0, I requested the number of
-            bird species seen in Cook County, which only looks at species list
+            <br></br>- Using the eBird API 2.0, I requested the number of bird
+            species seen in Cook County, which only looks at species list
             (spplist) and doesn’t exclude any records based on dates. This gets
             a complete collection of all birds spotted, dating back to eBird’s
             beginnings in 2002.
@@ -342,15 +342,15 @@ const Home = () => {
             clustered from the 2,247 observations and looked more like a
             horizontal ink blob than a data visualization. So instead, I
             averaged the Canada goose counts per month and graphed those. The
-            visual representation of the steady, cyclical trend in the numbers
+            visual representation of the steady, cyclical trend in the number
             of Canada geese in Cook County showed that their numbers have
-            remained steady from 2020 to now.
+            remained steady from 2020 to the present.
           </p>
           <p className="paragraph">
             6. “While bird watching data on iNaturalist tends to be a record of
             human activity as much as one of birds, an analysis of
-            research-grade sightings of buffleheads shows that the numbers of
-            buffleheads spotted in Cook County have been generally decreasing
+            research-grade sightings of buffleheads shows that the number of
+            buffleheads spotted in Cook County has been generally decreasing
             since 2021.”
             <br></br>- I filtered iNaturalist for “bufflehead” and “Cook County,
             IL,” then exported only the research-grade observations. These
@@ -363,8 +363,8 @@ const Home = () => {
             final graph for bufflehead numbers into the final data story because
             it would have left the story too visually cluttered, but the line
             chart and my data wrangling process are in the Quarto file of this
-            GitHub project. The visualization showed that the numbers of
-            buffleheads spotted in Cook County have been generally decreasing
+            GitHub project. The visualization showed that the number of
+            buffleheads spotted in Cook County has been generally decreasing
             since 2021.
           </p>
         </div>
