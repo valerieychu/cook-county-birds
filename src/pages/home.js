@@ -213,10 +213,10 @@ const Home = () => {
           <figure className="image">
             <img
               src={Lakefill02227}
-              alt="A common merganser swims on Northwestern's lagoon."
+              alt="A female red-breasted merganser swims on Northwestern's lagoon."
             />
             <figcaption className="image-caption">
-              A young common merganser swims on Northwestern's lagoon at sundown
+              A female red-breasted merganser swims on Northwestern's lagoon at sundown
               on Feb. 26, 2026. (Photo by Valerie Chu)
             </figcaption>
           </figure>
